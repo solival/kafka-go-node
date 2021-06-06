@@ -17,6 +17,7 @@ const (
 )
 
 func main() {
+	// Wait 15 seconds for Kafka to start
 	time.Sleep(15 * time.Second)
 	ctx := context.Background()
 	go produce(ctx)
